@@ -1,0 +1,17 @@
+[package]
+name = "i2c_hung_fix"
+version = "0.1.0"
+authors = ["cs2dsb <cs2dsb@gmail.com>"]
+edition = "2018"
+
+description = "Attempts to unhang the I2C bus after an ungraceful reset using traits from the embedded-hal."
+categories = ["hardware-support", "embedded", "no-std"]
+keywords = ["embedded-hal", "i2c", "io", "no_std"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/cs2dsb/i2c_hung_fix.rs"
+documentation = "https://docs.rs/i2c_hung_fix"
+homepage = "https://github.com/cs2dsb/i2c_hung_fix.rs"
+readme = "README.md"
+
+[dependencies]
+embedded-hal = { version = "^0.2.3", features = [ "unproven" ] }
